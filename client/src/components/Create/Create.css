@@ -1,0 +1,86 @@
+body { margin:0; padding:0; }
+
+#map { 
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right:0; 
+    width:100%;
+    border-style: none !important;
+}
+
+.marker {
+            background-image: url('pin.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+}
+
+#geocoder-container > div {
+    min-width:50%;
+    margin-left:25%;
+}
+
+.mapboxgl-canvas {
+    position: relative !important;
+    width: 100% !important;
+
+
+}
+
+#map {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px !important;
+    border-style: solid;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    
+}
+
+.mapContainer {
+    justify-content: space-between;
+    height: 500px !important;
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modal {
+    z-index: 1000;
+}
+
+.closeBtn {
+    float: right;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DCEEF2;
+    font-family: sans-serif;
+}
+
+div.card-content {
+    background-color: #D8FFC6;
+}
+
+#select-card .card-content{
+    margin-top: 40px;
+    padding: 0px !important;
+}
+#select-header {
+    background-color: #4D929E;
+    color: white;
+    padding: 10px;
+}
+
+#select-place {
+    padding: 10px;
+}
