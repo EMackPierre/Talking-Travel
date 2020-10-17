@@ -21,7 +21,7 @@ app.use(routes);
 require("./routes/api/details.js")(app);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Cities-DB");
 
 // Send every request to the React app
 // Define any API routes before this runs
