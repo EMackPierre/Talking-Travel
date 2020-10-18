@@ -207,7 +207,7 @@ class Create extends Component {
 
         console.log('component is mounted')
 
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYXJoZWVlZSIsImEiOiJjamdjeXZsaGswNmk0MzJtYWM5MXJxdWhlIn0.YLMP3IJkPnF-y8Yv0A8Udg';
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZW1hY2twaWVycmUiLCJhIjoiY2tnZWlvaW1tMGU0NjJ4cnMzNHFrM3BkeSJ9.YWk0F0ODZa_rsl9S8a2xWg';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/arheeee/cjgcyypkq00032sqkj85b2any',
