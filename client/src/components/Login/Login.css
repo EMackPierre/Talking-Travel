@@ -1,0 +1,112 @@
+  
+html, body {
+    height: 100% !important;
+    
+}
+
+div#root {
+    height: 100% !important;
+    
+    
+}
+
+
+.container  {
+    display: flex;
+    justify-content: center;
+
+  
+  }
+  
+  .container{
+    margin-right: 33%;
+    margin-left: 33%;
+    margin-top: 5%;
+    width: 33%;
+  }
+
+  #input_0, #input_1 {
+      width: 100%;
+      max-width: 100%;
+
+  }
+
+  #appName {
+      text-align: center;
+  }
+
+  /* @media only screen and (min-width: 1200px) */
+nav {
+    color: #fff;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    background-color: darkturquoise;}
+
+    /* .btn, .btn-large {
+        text-decoration: none;
+        color: black;
+        background-color: darkturquoise;
+        text-align: center;
+        letter-spacing: 10px;
+        transition: .2s ease-out;
+        cursor: zoom-in;
+    }
+    .btn, .btn-large, .btn-flat {
+        border: none;
+        border-radius: 12px;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        padding: 4px 5rem;
+        height: 50px;
+        text-transform: uppercase;
+        vertical-align: middle;
+        -webkit-tap-highlight-color: transparent;
+        font-size: 12px;
+    } */
+
+    .App {
+        height: 100% !important;
+        
+    
+    }
+
+    #body {
+    height: 100% !important;
+    background-image: url(image.png);
+        background-size: cover;
+    
+    }
+
+    div.card-content {
+        
+        background-color: aliceblue !important;
+    }
+
+    #logincontainer {   
+        margin-right: 33%;
+        margin-left: 40%;
+        margin-top: 5%;
+        width: 22%;
+        border-radius: 10px;
+        background-color: aliceblue;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:hover, .btn-large:hover {
+        background-color: aqua;
+    }
+    .btn, .btn-large {
+        text-decoration: none;
+        color: #fff;
+        background-color: #4D929E;
+        text-align: center;
+        letter-spacing: .5px;
+        transition: .2s ease-out;
+        cursor: pointer;}
