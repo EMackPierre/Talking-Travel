@@ -162,7 +162,7 @@ class Landing extends Component {
                         <Col s={12} m={1} />
 
                         <Col s={12} m={5}>
-                            <h4>tripshare</h4>
+                            <h4>Talking Travel</h4>
                             <h6>Relive all your favorite vacations and share them with your friends!</h6>
                         </Col>
                         <Col s={12} m={6} />
