@@ -92,8 +92,12 @@ class Landing extends Component {
         API.getUser(this.state.username)
             .then((result) => {
                 //console.log(result.data)
+                let pwd = result.data.password;
+                if (pwd === null || pwd === undefined) {
+                    pwd = "";
+                }
 
-                if (this.state.password === result.data.password) {
+                if (this.state.password === pwd) {
                     let token = randtoken.generate(16);
                     window.localStorage.setItem("token", token)
                     window.localStorage.setItem("name", result.data.name)
