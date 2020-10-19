@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -21,7 +21,16 @@ app.use(routes);
 require("./routes/api/details.js")(app);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Cities-DB");
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/Cities-DB',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+).then(() => console.log("Connection to MongoDB established!")).catch(err => console.log(err));
+
 
 // Send every request to the React app
 // Define any API routes before this runs
