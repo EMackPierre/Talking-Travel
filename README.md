@@ -10,7 +10,7 @@
 
   ### User Story
 
-  * AS AN avid traveller I WANT to be able to plan ahead to have the best possible trip and I want to share that experience with family and friends. 
+  * AS an avid traveller I WANT to be able to plan ahead to have the best possible trip and I want to share that experience with family and friends. 
   
   ### Table of Contents
 
@@ -34,7 +34,7 @@
 
   ### App Screen Shots
 
-  ![Photo]()
+  ![Photo](./client/public/images/talkingtravel.PNG)
  
   
   ### Contributors
