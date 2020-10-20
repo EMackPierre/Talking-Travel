@@ -121,6 +121,7 @@
   width:20px;
   height:20px;
   vertical-align:middle;
+  speak:none;
   background-repeat:no-repeat;
   }
   .geocoder-icon-search {
@@ -224,6 +225,7 @@
     }
     .mapboxgl-ctrl-icon,
     .mapboxgl-ctrl-icon > .mapboxgl-ctrl-compass-arrow {
+        speak: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
