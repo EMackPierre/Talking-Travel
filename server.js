@@ -9,7 +9,6 @@ const routes = require("./routes");
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
-  SKIP_PREFLIGHT_CHECK=true
 }
 
 // Configure body parser for AJAX requests

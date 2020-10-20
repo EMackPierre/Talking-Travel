@@ -19,6 +19,8 @@ const hide = {
 
 var userToken = window.localStorage.getItem("token")
 
+var map
+
 class Create extends Component {
 
     constructor(props) {
@@ -208,7 +210,7 @@ class Create extends Component {
         console.log('component is mounted')
 
         mapboxgl.accessToken = 'pk.eyJ1IjoiZW1hY2twaWVycmUiLCJhIjoiY2tnZWlvaW1tMGU0NjJ4cnMzNHFrM3BkeSJ9.YWk0F0ODZa_rsl9S8a2xWg';
-        var map = new mapboxgl.Map({
+        map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/arheeee/cjgcyypkq00032sqkj85b2any',
             center: [20.107686, 31.863775],
@@ -252,9 +254,9 @@ class Create extends Component {
 
         // map.addLayer({
         //     "id": "point",
-        //     "source": "single-point",
-        //     "type": "circle",
-        //     "paint": {
+        //      "source": "single-point",
+        //      "type": "circle",
+        //      "paint": {
         //         "circle-radius": 10,
         //         "circle-color": "#007cbf"
         //     }
@@ -389,6 +391,7 @@ class Create extends Component {
         return (
             <div>
                 <NavBar logOut={this.logOut} username={this.state.loggedAs}/>
+                {console.log(this.state.userCitiesData)}
                 <div className='mapContainer'>
                     <div id='map'></div>
                     {modal}
@@ -404,7 +407,6 @@ class Create extends Component {
                     {(this.state.location === "") ? null : <a className="btn addBtn" onClick={this.handleFormSubmit}>Select City</a>}
                     {!this.state.isHidden ? "" : <a className="btn addBtn" onClick={this.toggle}>Add Place</a>  }
                 </div>
-
                 <DetailsCard data={this.state.userCitiesData} token={this.state.token} onClick={this.deletePlace} deleteCity={this.deleteCity} username={this.state.loggedAs}/>
             </div>
             
