@@ -75,7 +75,7 @@ class Login extends Component {
 
         
 
-        //console.log("logindata", loginData)
+        console.log("logindata", loginData)
 
         
 
