@@ -113,16 +113,14 @@ class Login extends Component {
         })
 
         
-
-
-        // API.saveUser({
-        //     name: loginData.name,
-        //     email: loginData.email,
-        //     username: loginData.username,
-        //     password: loginData.password,
-        // }).then((result) => {
-        //     console.log("result: ", result)
-        // })
+         API.saveUser({
+             name: loginData.name,
+             email: loginData.email,
+             username: loginData.username,
+             password: loginData.password,
+         }).then((result) => {
+             console.log("result: ", result)
+         })
 
         console.log("username:", this.state.username)
     }
