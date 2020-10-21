@@ -1,8 +1,12 @@
 {
   "name": "talking-travel",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Mern App",
   "main": "server.js",
+  "engines": {
+    "node": "12.19.0"
+  },
+
   "scripts": {
     "start": "node server.js",
     "client": "cd client && npm run start",
