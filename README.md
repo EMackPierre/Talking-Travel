@@ -48,7 +48,7 @@
   ### Repository
 
   - [Github](https://github.com/EMackPierre/Talking-Travel)
-  - [Heroku](https://agile-taiga-58568.herokuapp.com/)
+  - [Heroku](https://gentle-ravine-76988.herokuapp.com/)
 
   ### Questions
 
